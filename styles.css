@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    text-decoration-color: #ffae00;õ
+
+}
+
+.navbar {
+    background: #0a0a0a;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#navbar_logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff9b04 0%, #fdcf02 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+@media screen and  (max-width: 960px) {
+    .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 10px;
+    }
+}
+
+.main {
+    background-color: #141414;
+}
+
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 90%;
+ 
+}
+
+.main_content h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff9b04 0%, #fdcf02 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main_content h2{
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #d4bd3a 0%, #ff0000 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 768px){
+    .main_content h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .main_content h2 {
+        font-size: 2rem;
+    }
+} 
